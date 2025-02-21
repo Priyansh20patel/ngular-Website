@@ -1,0 +1,13 @@
+<div class="sidebar" [class.closed]="isClosed">
+  <button (click)="toggleSidebar()"> ☰ </button>
+  <ul [class.hidden]="isClosed">
+
+      <li> <a routerLink='/dashboard' routerLinkActive="active"> <span *ngIf="!isSidebarCollapsed">Dashboard</span> </a> </li>
+
+      <li> <a routerLink='/settings' routerLinkActive="active"> <span *ngIf="!isSidebarCollapsed">Settings</span> </a> </li>
+  
+      <li> <a routerLink='/profile'routerLinkActive="active"> <span *ngIf="!isSidebarCollapsed">Profile</span> </a> </li>
+   
+  </ul>
+
+</div>

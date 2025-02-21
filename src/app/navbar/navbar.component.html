@@ -1,0 +1,14 @@
+<nav>
+    <ul class="nav-list">
+      <li><a routerLink="/" class="nav-link">Home</a></li>
+      <li><a routerLink="/about" class="nav-link">About</a></li>
+      <li><a routerLink="/contact" class="nav-link">Contact</a></li>
+      
+    </ul>
+
+
+    <!-- Search Box -->
+<div></div>
+    <input type="text" placeholder="Search.." class="search-input" [(ngModel)]="searchQuery">
+
+    <button class="search-btn" (click)="performSearch()">👀</button>

@@ -1,0 +1,10 @@
+.main-content {
+    margin-left: 170px; /* Default sidebar width */
+    
+    margin: top 50px;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.main-content.sidebar-collapsed {
+    margin-left: 86px; /* Adjusted when sidebar is collapsed */
+}

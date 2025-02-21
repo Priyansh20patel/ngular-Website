@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 10px;
+  position: fixed; /* Makes the nav fixed to the top */
+  top: 0;
+  left: 0; /* Ensures no left margin */
+  right: 0; /* Ensures no right margin */
+  z-index: 1000; 
+  backdrop-filter: blur(10px); 
+}
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-list li {
+    display: inline;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+
+  input[type=text] {
+    width: 100px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border-radius: 15px;
+
+  }
+  
+  input[type=text]:focus {
+    width: 15%;
+  }
+
